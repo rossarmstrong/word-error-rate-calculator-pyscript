@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Word Error Rate Calculator in PyScript</title>
+
+    <!-- Recommended meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    
+    <!-- PyScript CSS -->
+    <link rel="stylesheet" href="https://pyscript.net/releases/2023.12.1/core.css">
+
+    <!-- This script tag bootstraps PyScript -->
+    <script type="module" src="https://pyscript.net/releases/2023.12.1/core.js"></script>
+</head>
+<body>
+    <h1>Word Error Rate Calculator in PyScript</h1>
+    <p>Calculate the WER between two sets of text</p>
+    <label>Reference:</label>
+    <br />
+    <input type="text" id="reference" placeholder="Type Reference here..." />
+
+    <br /><br />
+    <label>Hypothesis:</label>
+    <br />
+    <input type="text" id="hypothesis" placeholder="Type Hypothesis here..." />
+    <br /><br />
+    
+    <button py-click="word_error_rate">Calculate</button>
+
+    <br /><br />
+    <div id="output"></div>
+    <script type="py" src="./main.py" config="./pyscript.toml"></script>
+</body>
+</html>
